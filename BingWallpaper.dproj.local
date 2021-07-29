@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+  <Transactions>
+    <Transaction>2021-07-29 13:50:41.689,=C:\Work\Unit1.pas</Transaction>
+    <Transaction>2021-07-29 13:51:27.925,C:\Work\Private\BingWallpaper\bwMainForm.dfm=C:\Work\Unit1.dfm</Transaction>
+    <Transaction>2021-07-29 13:51:27.925,C:\Work\Private\BingWallpaper\bwMainForm.pas=C:\Work\Unit1.pas</Transaction>
+    <Transaction>2021-07-29 13:51:32.012,C:\Work\Private\BingWallpaper\BingWallpaper.dproj=C:\Work\Project1.dproj</Transaction>
+    <Transaction>2021-07-29 13:55:57.183,=C:\Work\Private\BingWallpaper\Unit1.pas</Transaction>
+    <Transaction>2021-07-29 13:56:04.092,C:\Work\Private\BingWallpaper\bwBingApi.pas=C:\Work\Private\BingWallpaper\Unit1.pas</Transaction>
+    <Transaction>2021-07-29 16:36:27.932,=C:\Work\Private\BingWallpaper\WindowsAPI-master\Units\Win32.ShObjIdl.pas</Transaction>
+    <Transaction>2021-07-29 16:36:56.770,C:\Work\Private\BingWallpaper\WindowsAPI-master\Units\Win32.ShObjIdl.pas=</Transaction>
+    <Transaction>2021-07-29 17:06:05.547,=C:\Work\Private\BingWallpaper\Unit1.pas</Transaction>
+    <Transaction>2021-07-29 17:06:11.995,C:\Work\Private\BingWallpaper\bwShObjIdl.pas=C:\Work\Private\BingWallpaper\Unit1.pas</Transaction>
+    <Transaction>2021-07-29 17:29:03.603,=C:\Work\Private\BingWallpaper\Unit1.pas</Transaction>
+    <Transaction>2021-07-29 17:29:07.999,C:\Work\Private\BingWallpaper\bwMonitors.pas=C:\Work\Private\BingWallpaper\Unit1.pas</Transaction>
+    <Transaction>2021-07-29 17:31:56.642,C:\Work\Private\BingWallpaper\bwDesktopWallpaper.pas=C:\Work\Private\BingWallpaper\bwMonitors.pas</Transaction>
+    <Transaction>2021-07-29 17:55:27.903,=C:\Work\Private\BingWallpaper\.gitignore</Transaction>
+  </Transactions>
+</BorlandProject>
