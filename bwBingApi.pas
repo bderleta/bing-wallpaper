@@ -4,7 +4,7 @@ interface
 
 uses
   Winapi.Windows, System.JSON, System.Generics.Collections, IdIOHandler,
-  System.SysUtils, System.Classes,
+  System.SysUtils, System.Classes, CCR.Exif, CCR.Exif.IPTC,
   IdIOHandlerSocket, IdIOHandlerStack, IdSSL, IdSSLOpenSSL, IdBaseComponent,
   IdComponent, IdTCPConnection, IdTCPClient, IdHTTP;
 
@@ -90,13 +90,28 @@ end;
 function TBingImage.GetLocation: string;
 var
   FStream: TFileStream;
+  ExifData: TExifData;
 begin
   // @todo Dynamically determine file type
   Result := (FOrigin.FImageStoreLocation + FHash + '.jpg');
   if not FileExists(Result) then begin
     FStream := TFileStream.Create(Result, fmCreate);
-    FOrigin.FClient.Get(FUrl, FStream);
-    FStream.Free;
+    try
+      FOrigin.FClient.Get(FUrl, FStream);
+    finally
+      FStream.Free;
+    end;
+    ExifData := TExifData.Create(nil);
+    try
+      ExifData.LoadFromJPEG(Result);
+      ExifData.EnforceASCII := False;
+      ExifData.XMPWritePolicy := xwAlwaysUpdate;
+      ExifData.Copyright := FCopyrightText;
+      ExifData.Title := FTitle;
+      ExifData.SaveToJPEG(Result);
+    finally
+      ExifData.Free;
+    end;
   end;
 end;
 

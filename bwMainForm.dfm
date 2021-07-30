@@ -11581,21 +11581,30 @@ object MainForm: TMainForm
   PixelsPerInch = 144
   TextHeight = 19
   object Button1: TButton
-    Left = 240
-    Top = 168
+    Left = 819
+    Top = 8
     Width = 137
     Height = 49
     Caption = 'Button1'
     TabOrder = 0
     OnClick = Button1Click
   end
-  object Button2: TButton
-    Left = 512
-    Top = 160
-    Width = 89
-    Height = 49
-    Caption = 'Button2'
+  object ListView: TListView
+    AlignWithMargins = True
+    Left = 10
+    Top = 10
+    Width = 944
+    Height = 430
+    Margins.Left = 10
+    Margins.Top = 10
+    Margins.Right = 10
+    Margins.Bottom = 10
+    Align = alClient
+    Columns = <>
+    LargeImages = ImageList
     TabOrder = 1
+    ExplicitLeft = 5
+    ExplicitTop = 42
   end
   object TrayIcon: TTrayIcon
     Icon.Data = {
@@ -23165,7 +23174,14 @@ object MainForm: TMainForm
       0000000000000000000000000000000000000000000000000000000000000000
       00000000000000000000000000000000000000000000}
     Visible = True
-    Left = 8
-    Top = 8
+    Left = 64
+    Top = 24
+  end
+  object ImageList: TImageList
+    Height = 64
+    Masked = False
+    Width = 64
+    Left = 64
+    Top = 80
   end
 end

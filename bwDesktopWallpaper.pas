@@ -3,7 +3,8 @@ unit bwDesktopWallpaper;
 interface
 
 uses
-  System.IOUtils, Win.ComObj, Win.ComObjWrapper, System.UITypes, System.SysUtils, bwShObjIdl;
+  System.IOUtils, Win.ComObj, Win.ComObjWrapper, System.UITypes, System.SysUtils, bwShObjIdl,
+  System.Types;
 
 type
   TDesktopWallpaperPosition = (
@@ -26,6 +27,8 @@ type
     function GetDevicePath(AIndex: Cardinal): string;
     function GetWallpaper(AIndex: Cardinal): string;
     procedure SetWallpaper(AIndex: Cardinal; const AValue: string);
+    function GetRect(AIndex: Cardinal): TRect;
+    function GetMaxResolution: TPoint;
   public
     constructor Create;
     property Enabled: Boolean write SetEnabled;
@@ -34,6 +37,8 @@ type
     property Count: Cardinal read GetCount;
     property Wallpaper[AIndex: Cardinal]: string read GetWallpaper write SetWallpaper;
     property DevicePath[AIndex: Cardinal]: string read GetDevicePath;
+    property Rect[AIndex: Cardinal]: TRect read GetRect;
+    property MaxResolution: TPoint read GetMaxResolution;
   end;
 
 implementation
@@ -46,6 +51,31 @@ end;
 procedure TDesktopWallpaper.SetEnabled;
 begin
   Intf.Enable(AValue)
+end;
+
+function TDesktopWallpaper.GetMaxResolution;
+var
+  I: Integer;
+  Rect: TRect;
+begin
+  Result := Point(0, 0);
+  for I := 0 to GetCount() - 1 do begin
+    Rect := Intf.GetMonitorRECT(Intf.GetMonitorDevicePathAt(I));
+    Writeln('Monitor: ', I, ' Left: ', Rect.Left, ' Top: ', Rect.Top, ' Right: ',
+      Rect.Right, ' Bottom: ', Rect.Bottom, ' Width: ', Rect.Width, ' Height: ',
+      Rect.Height);
+    if (Rect.Width >= Result.X) and (Rect.Height >= Result.Y) then begin
+       Result.X := Rect.Width;
+       Result.Y := Rect.Height;
+    end;
+  end;
+end;
+
+function TDesktopWallpaper.GetRect;
+begin
+  if AIndex >= GetCount() then
+    raise EListError.Create('Index out of bounds');
+  Result := Intf.GetMonitorRECT(Intf.GetMonitorDevicePathAt(AIndex));
 end;
 
 function TDesktopWallpaper.GetDevicePath;

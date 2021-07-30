@@ -109,6 +109,8 @@
         <DCCReference Include="bwBingApi.pas"/>
         <DCCReference Include="bwShObjIdl.pas"/>
         <DCCReference Include="bwDesktopWallpaper.pas"/>
+        <DCCReference Include="bwResample.pas"/>
+        <DCCReference Include="bwJpegThumbnail.pas"/>
         <None Include=".gitignore"/>
         <BuildConfiguration Include="Release">
             <Key>Cfg_2</Key>
@@ -136,15 +138,15 @@
                 </Excluded_Packages>
             </Delphi.Personality>
             <Deployment Version="3">
-                <DeployFile LocalName="Win32\Debug\BingWallpaper.exe" Configuration="Debug" Class="ProjectOutput">
-                    <Platform Name="Win32">
-                        <RemoteName>BingWallpaper.exe</RemoteName>
-                        <Overwrite>true</Overwrite>
-                    </Platform>
-                </DeployFile>
                 <DeployFile LocalName=".gitignore" Configuration="Debug" Class="ProjectFile">
                     <Platform Name="Win32">
                         <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="Win32\Debug\BingWallpaper.exe" Configuration="Debug" Class="ProjectOutput">
+                    <Platform Name="Win32">
+                        <RemoteName>BingWallpaper.exe</RemoteName>
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>

@@ -5,7 +5,9 @@ uses
   bwMainForm in 'bwMainForm.pas' {MainForm},
   bwBingApi in 'bwBingApi.pas',
   bwShObjIdl in 'bwShObjIdl.pas',
-  bwDesktopWallpaper in 'bwDesktopWallpaper.pas';
+  bwDesktopWallpaper in 'bwDesktopWallpaper.pas',
+  bwResample in 'bwResample.pas',
+  bwJpegThumbnail in 'bwJpegThumbnail.pas';
 
 {$R *.res}
 

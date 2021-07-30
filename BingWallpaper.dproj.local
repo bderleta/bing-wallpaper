@@ -1,19 +1,24 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <BorlandProject>
-  <Transactions>
-    <Transaction>2021-07-29 13:50:41.689,=C:\Work\Unit1.pas</Transaction>
-    <Transaction>2021-07-29 13:51:27.925,C:\Work\Private\BingWallpaper\bwMainForm.dfm=C:\Work\Unit1.dfm</Transaction>
-    <Transaction>2021-07-29 13:51:27.925,C:\Work\Private\BingWallpaper\bwMainForm.pas=C:\Work\Unit1.pas</Transaction>
-    <Transaction>2021-07-29 13:51:32.012,C:\Work\Private\BingWallpaper\BingWallpaper.dproj=C:\Work\Project1.dproj</Transaction>
-    <Transaction>2021-07-29 13:55:57.183,=C:\Work\Private\BingWallpaper\Unit1.pas</Transaction>
-    <Transaction>2021-07-29 13:56:04.092,C:\Work\Private\BingWallpaper\bwBingApi.pas=C:\Work\Private\BingWallpaper\Unit1.pas</Transaction>
-    <Transaction>2021-07-29 16:36:27.932,=C:\Work\Private\BingWallpaper\WindowsAPI-master\Units\Win32.ShObjIdl.pas</Transaction>
-    <Transaction>2021-07-29 16:36:56.770,C:\Work\Private\BingWallpaper\WindowsAPI-master\Units\Win32.ShObjIdl.pas=</Transaction>
-    <Transaction>2021-07-29 17:06:05.547,=C:\Work\Private\BingWallpaper\Unit1.pas</Transaction>
-    <Transaction>2021-07-29 17:06:11.995,C:\Work\Private\BingWallpaper\bwShObjIdl.pas=C:\Work\Private\BingWallpaper\Unit1.pas</Transaction>
-    <Transaction>2021-07-29 17:29:03.603,=C:\Work\Private\BingWallpaper\Unit1.pas</Transaction>
-    <Transaction>2021-07-29 17:29:07.999,C:\Work\Private\BingWallpaper\bwMonitors.pas=C:\Work\Private\BingWallpaper\Unit1.pas</Transaction>
-    <Transaction>2021-07-29 17:31:56.642,C:\Work\Private\BingWallpaper\bwDesktopWallpaper.pas=C:\Work\Private\BingWallpaper\bwMonitors.pas</Transaction>
-    <Transaction>2021-07-29 17:55:27.903,=C:\Work\Private\BingWallpaper\.gitignore</Transaction>
+	<Transactions>
+    <Transaction>1899-12-30 00:00:00.000.603,=C:\Work\Private\BingWallpaper\Unit1.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.925,C:\Work\Unit1.pas=C:\Work\Private\BingWallpaper\bwMainForm.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.689,=C:\Work\Unit1.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.995,C:\Work\Private\BingWallpaper\Unit1.pas=C:\Work\Private\BingWallpaper\bwShObjIdl.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.547,=C:\Work\Private\BingWallpaper\Unit1.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.092,C:\Work\Private\BingWallpaper\Unit1.pas=C:\Work\Private\BingWallpaper\bwBingApi.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.183,=C:\Work\Private\BingWallpaper\Unit1.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.642,C:\Work\Private\BingWallpaper\bwMonitors.pas=C:\Work\Private\BingWallpaper\bwDesktopWallpaper.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.012,C:\Work\Project1.dproj=C:\Work\Private\BingWallpaper\BingWallpaper.dproj</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.903,=C:\Work\Private\BingWallpaper\.gitignore</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.999,C:\Work\Private\BingWallpaper\Unit1.pas=C:\Work\Private\BingWallpaper\bwMonitors.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.770,C:\Work\Private\BingWallpaper\WindowsAPI-master\Units\Win32.ShObjIdl.pas=</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.932,=C:\Work\Private\BingWallpaper\WindowsAPI-master\Units\Win32.ShObjIdl.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.925,C:\Work\Unit1.dfm=C:\Work\Private\BingWallpaper\bwMainForm.dfm</Transaction>
+    <Transaction>2021-07-30 00:11:53.673,=C:\Work\Private\bing-wallpaper\Unit1.pas</Transaction>
+    <Transaction>2021-07-30 00:11:57.126,C:\Work\Private\bing-wallpaper\bwResample.pas=C:\Work\Private\bing-wallpaper\Unit1.pas</Transaction>
+    <Transaction>2021-07-30 00:36:20.430,=C:\Work\Private\bing-wallpaper\Unit1.pas</Transaction>
+    <Transaction>2021-07-30 00:37:03.437,C:\Work\Private\bing-wallpaper\bwResampleThread.pas=C:\Work\Private\bing-wallpaper\Unit1.pas</Transaction>
+    <Transaction>2021-07-30 00:59:18.651,C:\Work\Private\bing-wallpaper\bwJpegThumbnail.pas=C:\Work\Private\bing-wallpaper\bwResampleThread.pas</Transaction>
   </Transactions>
 </BorlandProject>
