@@ -11,12 +11,12 @@ uses
 
 type
   TMainForm = class(TForm)
-    Button1: TButton;
+    UpdateBtn: TButton;
     TrayIcon: TTrayIcon;
     ListView: TListView;
     ImageList: TImageList;
     procedure FormCreate(Sender: TObject);
-    procedure Button1Click(Sender: TObject);
+    procedure UpdateBtnClick(Sender: TObject);
     procedure OnThumbnailComplete(AOut: TBitmap; AData: Pointer);
   private
     { Private declarations }
@@ -34,14 +34,14 @@ implementation
 
 {$R *.dfm}
 
-procedure TMainForm.Button1Click(Sender: TObject);
+procedure TMainForm.UpdateBtnClick(Sender: TObject);
 var
   I: Integer;
 begin
   for I := 0 to DesktopWallpaper.Count - 1 do begin
     Writeln('Monitor ', I, ': ', DesktopWallpaper.DevicePath[I]);
     Writeln('  wallpaper: ', DesktopWallpaper.Wallpaper[I]);
-    DesktopWallpaper.Wallpaper[I] := BingApi.Images[I + 3].GetLocation;
+    DesktopWallpaper.Wallpaper[I] := BingApi.Images[I].GetLocation;
   end;
 
 end;

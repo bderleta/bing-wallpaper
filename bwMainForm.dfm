@@ -11580,23 +11580,23 @@ object MainForm: TMainForm
   OnCreate = FormCreate
   PixelsPerInch = 144
   TextHeight = 19
-  object Button1: TButton
-    Left = 819
+  object UpdateBtn: TButton
+    Left = 784
     Top = 8
-    Width = 137
-    Height = 49
-    Caption = 'Button1'
+    Width = 172
+    Height = 25
+    Caption = 'Set New Wallpaper'
     TabOrder = 0
-    OnClick = Button1Click
+    OnClick = UpdateBtnClick
   end
   object ListView: TListView
     AlignWithMargins = True
     Left = 10
-    Top = 10
+    Top = 40
     Width = 944
-    Height = 430
+    Height = 400
     Margins.Left = 10
-    Margins.Top = 10
+    Margins.Top = 40
     Margins.Right = 10
     Margins.Bottom = 10
     Align = alClient
@@ -11604,7 +11604,8 @@ object MainForm: TMainForm
     LargeImages = ImageList
     TabOrder = 1
     ExplicitLeft = 5
-    ExplicitTop = 42
+    ExplicitTop = 5
+    ExplicitHeight = 430
   end
   object TrayIcon: TTrayIcon
     Icon.Data = {
